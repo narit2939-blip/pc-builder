@@ -1,0 +1,323 @@
+[
+  {
+    "id": "1",
+    "category": "cpu",
+    "name": "Intel Core i3-12100F",
+    "price": 3200,
+    "socket": "LGA1700",
+    "tdp": 58,
+    "score": 40
+  },
+  {
+    "id": "2",
+    "category": "cpu",
+    "name": "Intel Core i5-12400F",
+    "price": 5500,
+    "socket": "LGA1700",
+    "tdp": 65,
+    "score": 55
+  },
+  {
+    "id": "3",
+    "category": "cpu",
+    "name": "Intel Core i5-14600K",
+    "price": 11500,
+    "socket": "LGA1700",
+    "tdp": 125,
+    "score": 85
+  },
+  {
+    "id": "4",
+    "category": "cpu",
+    "name": "AMD Ryzen 5 5600",
+    "price": 4500,
+    "socket": "AM4",
+    "tdp": 65,
+    "score": 55
+  },
+  {
+    "id": "5",
+    "category": "cpu",
+    "name": "AMD Ryzen 5 7600",
+    "price": 7900,
+    "socket": "AM5",
+    "tdp": 65,
+    "score": 70
+  },
+  {
+    "id": "6",
+    "category": "cpu",
+    "name": "AMD Ryzen 7 7800X3D",
+    "price": 16500,
+    "socket": "AM5",
+    "tdp": 120,
+    "score": 100
+  },
+  {
+    "id": "7",
+    "category": "motherboard",
+    "name": "ASUS PRIME H610M-K D4",
+    "price": 2200,
+    "socket": "LGA1700",
+    "ramType": "DDR4"
+  },
+  {
+    "id": "8",
+    "category": "motherboard",
+    "name": "MSI B660M-A",
+    "price": 3800,
+    "socket": "LGA1700",
+    "ramType": "DDR4"
+  },
+  {
+    "id": "9",
+    "category": "motherboard",
+    "name": "ASUS TUF Z790-PLUS D5",
+    "price": 7900,
+    "socket": "LGA1700",
+    "ramType": "DDR5"
+  },
+  {
+    "id": "10",
+    "category": "motherboard",
+    "name": "ASRock B450M",
+    "price": 2400,
+    "socket": "AM4",
+    "ramType": "DDR4"
+  },
+  {
+    "id": "11",
+    "category": "motherboard",
+    "name": "MSI B550M PRO",
+    "price": 3600,
+    "socket": "AM4",
+    "ramType": "DDR4"
+  },
+  {
+    "id": "12",
+    "category": "motherboard",
+    "name": "Gigabyte B650M",
+    "price": 4900,
+    "socket": "AM5",
+    "ramType": "DDR5"
+  },
+  {
+    "id": "13",
+    "category": "gpu",
+    "name": "GeForce RTX 4060 8GB",
+    "price": 11500,
+    "tdp": 115,
+    "psuRec": 550,
+    "score": 55
+  },
+  {
+    "id": "14",
+    "category": "gpu",
+    "name": "Radeon RX 7600 8GB",
+    "price": 9500,
+    "tdp": 165,
+    "psuRec": 550,
+    "score": 48
+  },
+  {
+    "id": "15",
+    "category": "gpu",
+    "name": "GeForce RTX 4060 Ti 8GB",
+    "price": 15500,
+    "tdp": 160,
+    "psuRec": 550,
+    "score": 66
+  },
+  {
+    "id": "16",
+    "category": "gpu",
+    "name": "Radeon RX 7800 XT 16GB",
+    "price": 19900,
+    "tdp": 263,
+    "psuRec": 700,
+    "score": 85
+  },
+  {
+    "id": "17",
+    "category": "gpu",
+    "name": "GeForce RTX 4070 SUPER",
+    "price": 24500,
+    "tdp": 220,
+    "psuRec": 650,
+    "score": 90
+  },
+  {
+    "id": "18",
+    "category": "gpu",
+    "name": "GeForce RTX 4080 SUPER",
+    "price": 39900,
+    "tdp": 320,
+    "psuRec": 750,
+    "score": 118
+  },
+  {
+    "id": "19",
+    "category": "ram",
+    "name": "DDR4 16GB (2x8) 3200",
+    "price": 1200,
+    "type": "DDR4",
+    "gb": 16
+  },
+  {
+    "id": "20",
+    "category": "ram",
+    "name": "DDR4 32GB (2x16) 3200",
+    "price": 2300,
+    "type": "DDR4",
+    "gb": 32
+  },
+  {
+    "id": "21",
+    "category": "ram",
+    "name": "DDR5 16GB (2x8) 6000",
+    "price": 2500,
+    "type": "DDR5",
+    "gb": 16
+  },
+  {
+    "id": "22",
+    "category": "ram",
+    "name": "DDR5 32GB (2x16) 6000",
+    "price": 4500,
+    "type": "DDR5",
+    "gb": 32
+  },
+  {
+    "id": "23",
+    "category": "psu",
+    "name": "PSU 450W 80+ Bronze",
+    "price": 1100,
+    "watt": 450
+  },
+  {
+    "id": "24",
+    "category": "psu",
+    "name": "PSU 550W 80+ Bronze",
+    "price": 1500,
+    "watt": 550
+  },
+  {
+    "id": "25",
+    "category": "psu",
+    "name": "PSU 650W 80+ Gold",
+    "price": 2100,
+    "watt": 650
+  },
+  {
+    "id": "26",
+    "category": "psu",
+    "name": "PSU 750W 80+ Gold",
+    "price": 2900,
+    "watt": 750
+  },
+  {
+    "id": "27",
+    "category": "psu",
+    "name": "PSU 850W 80+ Gold",
+    "price": 3800,
+    "watt": 850
+  },
+  {
+    "id": "28",
+    "category": "fan",
+    "name": "Arctic P12",
+    "price": 250,
+    "fanSize": 120,
+    "cfm": 56
+  },
+  {
+    "id": "29",
+    "category": "fan",
+    "name": "Cooler Master SickleFlow 120",
+    "price": 350,
+    "fanSize": 120,
+    "cfm": 62
+  },
+  {
+    "id": "30",
+    "category": "fan",
+    "name": "Noctua NF-A14 PWM",
+    "price": 1100,
+    "fanSize": 140,
+    "cfm": 82
+  },
+  {
+    "id": "31",
+    "category": "fan",
+    "name": "Corsair AF120 Elite",
+    "price": 500,
+    "fanSize": 120,
+    "cfm": 52
+  },
+  {
+    "id": "32",
+    "category": "cooler",
+    "name": "ID-Cooling SE-214-XT",
+    "price": 690,
+    "coolerType": "air",
+    "sockets": "LGA1700,AM4,AM5",
+    "maxTdp": 180,
+    "radiator": 0,
+    "cfm": 50
+  },
+  {
+    "id": "33",
+    "category": "cooler",
+    "name": "Thermalright Peerless Assassin 120 SE",
+    "price": 1190,
+    "coolerType": "air",
+    "sockets": "LGA1700,AM4,AM5",
+    "maxTdp": 245,
+    "radiator": 0,
+    "cfm": 66
+  },
+  {
+    "id": "34",
+    "category": "cooler",
+    "name": "Deepcool AK620",
+    "price": 2290,
+    "coolerType": "air",
+    "sockets": "LGA1700,AM4,AM5",
+    "maxTdp": 260,
+    "radiator": 0,
+    "cfm": 68
+  },
+  {
+    "id": "35",
+    "category": "cooler",
+    "name": "Arctic Liquid Freezer III 240",
+    "price": 3490,
+    "coolerType": "liquid",
+    "sockets": "LGA1700,AM4,AM5",
+    "maxTdp": 300,
+    "radiator": 240,
+    "cfm": 62
+  },
+  {
+    "id": "36",
+    "category": "cooler",
+    "name": "Arctic Liquid Freezer III 360",
+    "price": 4290,
+    "coolerType": "liquid",
+    "sockets": "LGA1700,AM4,AM5",
+    "maxTdp": 350,
+    "radiator": 360,
+    "cfm": 62
+  },
+  {
+    "id": "37",
+    "category": "cooler",
+    "name": "Cooler Master Hyper 212",
+    "price": 890,
+    "coolerType": "air",
+    "sockets": "LGA1700,AM4",
+    "maxTdp": 150,
+    "radiator": 0,
+    "cfm": 60
+  }
+]
