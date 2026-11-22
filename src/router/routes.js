@@ -4,7 +4,7 @@ const routes = [
     path: '/',
     component: () => import('@/layouts/MainLayout.vue'),
     children: [
-      { path: '', name: 'builder', component: () => import('@/pages/BuilderPage.vue') }, // เปิดให้ทุกคนใช้ได้
+      { path: '', name: 'builder', component: () => import('@/pages/BuilderPage.vue') }, 
       {
         path: 'saved',
         name: 'saved',

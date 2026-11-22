@@ -7,7 +7,8 @@
       "price": 3200,
       "socket": "LGA1700",
       "tdp": 58,
-      "score": 40
+      "score": 40,
+      "image": ""
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "price": 5500,
       "socket": "LGA1700",
       "tdp": 65,
-      "score": 55
+      "score": 55,
+      "image": ""
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "price": 11500,
       "socket": "LGA1700",
       "tdp": 125,
-      "score": 85
+      "score": 85,
+      "image": ""
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "price": 4500,
       "socket": "AM4",
       "tdp": 65,
-      "score": 55
+      "score": 55,
+      "image": ""
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "price": 7900,
       "socket": "AM5",
       "tdp": 65,
-      "score": 70
+      "score": 70,
+      "image": ""
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "price": 16500,
       "socket": "AM5",
       "tdp": 120,
-      "score": 100
+      "score": 100,
+      "image": ""
     },
     {
       "id": 7,
@@ -60,7 +66,9 @@
       "name": "ASUS PRIME H610M-K D4",
       "price": 2200,
       "socket": "LGA1700",
-      "ramType": "DDR4"
+      "ramType": "DDR4",
+      "formFactor": "mATX",
+      "image": ""
     },
     {
       "id": 8,
@@ -68,7 +76,9 @@
       "name": "MSI B660M-A",
       "price": 3800,
       "socket": "LGA1700",
-      "ramType": "DDR4"
+      "ramType": "DDR4",
+      "formFactor": "mATX",
+      "image": ""
     },
     {
       "id": 9,
@@ -76,7 +86,9 @@
       "name": "ASUS TUF Z790-PLUS D5",
       "price": 7900,
       "socket": "LGA1700",
-      "ramType": "DDR5"
+      "ramType": "DDR5",
+      "formFactor": "ATX",
+      "image": ""
     },
     {
       "id": 10,
@@ -84,7 +96,9 @@
       "name": "ASRock B450M",
       "price": 2400,
       "socket": "AM4",
-      "ramType": "DDR4"
+      "ramType": "DDR4",
+      "formFactor": "mATX",
+      "image": ""
     },
     {
       "id": 11,
@@ -92,7 +106,9 @@
       "name": "MSI B550M PRO",
       "price": 3600,
       "socket": "AM4",
-      "ramType": "DDR4"
+      "ramType": "DDR4",
+      "formFactor": "mATX",
+      "image": ""
     },
     {
       "id": 12,
@@ -100,7 +116,9 @@
       "name": "Gigabyte B650M",
       "price": 4900,
       "socket": "AM5",
-      "ramType": "DDR5"
+      "ramType": "DDR5",
+      "formFactor": "mATX",
+      "image": ""
     },
     {
       "id": 13,
@@ -109,7 +127,9 @@
       "price": 11500,
       "tdp": 115,
       "psuRec": 550,
-      "score": 55
+      "score": 55,
+      "gpuLength": 240,
+      "image": ""
     },
     {
       "id": 14,
@@ -118,7 +138,9 @@
       "price": 9500,
       "tdp": 165,
       "psuRec": 550,
-      "score": 48
+      "score": 48,
+      "gpuLength": 240,
+      "image": ""
     },
     {
       "id": 15,
@@ -127,7 +149,9 @@
       "price": 15500,
       "tdp": 160,
       "psuRec": 550,
-      "score": 66
+      "score": 66,
+      "gpuLength": 245,
+      "image": ""
     },
     {
       "id": 16,
@@ -136,7 +160,9 @@
       "price": 19900,
       "tdp": 263,
       "psuRec": 700,
-      "score": 85
+      "score": 85,
+      "gpuLength": 300,
+      "image": ""
     },
     {
       "id": 17,
@@ -145,7 +171,9 @@
       "price": 24500,
       "tdp": 220,
       "psuRec": 650,
-      "score": 90
+      "score": 90,
+      "gpuLength": 300,
+      "image": ""
     },
     {
       "id": 18,
@@ -154,7 +182,9 @@
       "price": 39900,
       "tdp": 320,
       "psuRec": 750,
-      "score": 118
+      "score": 118,
+      "gpuLength": 330,
+      "image": ""
     },
     {
       "id": 19,
@@ -162,7 +192,8 @@
       "name": "DDR4 16GB (2x8) 3200",
       "price": 1200,
       "type": "DDR4",
-      "gb": 16
+      "gb": 16,
+      "image": ""
     },
     {
       "id": 20,
@@ -170,7 +201,8 @@
       "name": "DDR4 32GB (2x16) 3200",
       "price": 2300,
       "type": "DDR4",
-      "gb": 32
+      "gb": 32,
+      "image": ""
     },
     {
       "id": 21,
@@ -178,7 +210,8 @@
       "name": "DDR5 16GB (2x8) 6000",
       "price": 2500,
       "type": "DDR5",
-      "gb": 16
+      "gb": 16,
+      "image": ""
     },
     {
       "id": 22,
@@ -186,42 +219,48 @@
       "name": "DDR5 32GB (2x16) 6000",
       "price": 4500,
       "type": "DDR5",
-      "gb": 32
+      "gb": 32,
+      "image": ""
     },
     {
       "id": 23,
       "category": "psu",
       "name": "PSU 450W 80+ Bronze",
       "price": 1100,
-      "watt": 450
+      "watt": 450,
+      "image": ""
     },
     {
       "id": 24,
       "category": "psu",
       "name": "PSU 550W 80+ Bronze",
       "price": 1500,
-      "watt": 550
+      "watt": 550,
+      "image": ""
     },
     {
       "id": 25,
       "category": "psu",
       "name": "PSU 650W 80+ Gold",
       "price": 2100,
-      "watt": 650
+      "watt": 650,
+      "image": ""
     },
     {
       "id": 26,
       "category": "psu",
       "name": "PSU 750W 80+ Gold",
       "price": 2900,
-      "watt": 750
+      "watt": 750,
+      "image": ""
     },
     {
       "id": 27,
       "category": "psu",
       "name": "PSU 850W 80+ Gold",
       "price": 3800,
-      "watt": 850
+      "watt": 850,
+      "image": ""
     },
     {
       "id": 28,
@@ -229,7 +268,8 @@
       "name": "Arctic P12",
       "price": 250,
       "fanSize": 120,
-      "cfm": 56
+      "cfm": 56,
+      "image": ""
     },
     {
       "id": 29,
@@ -237,7 +277,8 @@
       "name": "Cooler Master SickleFlow 120",
       "price": 350,
       "fanSize": 120,
-      "cfm": 62
+      "cfm": 62,
+      "image": ""
     },
     {
       "id": 30,
@@ -245,7 +286,8 @@
       "name": "Noctua NF-A14 PWM",
       "price": 1100,
       "fanSize": 140,
-      "cfm": 82
+      "cfm": 82,
+      "image": ""
     },
     {
       "id": 31,
@@ -253,7 +295,8 @@
       "name": "Corsair AF120 Elite",
       "price": 500,
       "fanSize": 120,
-      "cfm": 52
+      "cfm": 52,
+      "image": ""
     },
     {
       "id": 32,
@@ -264,7 +307,9 @@
       "sockets": "LGA1700,AM4,AM5",
       "maxTdp": 180,
       "radiator": 0,
-      "cfm": 50
+      "cfm": 50,
+      "coolerHeight": 150,
+      "image": ""
     },
     {
       "id": 33,
@@ -275,7 +320,9 @@
       "sockets": "LGA1700,AM4,AM5",
       "maxTdp": 245,
       "radiator": 0,
-      "cfm": 66
+      "cfm": 66,
+      "coolerHeight": 155,
+      "image": ""
     },
     {
       "id": 34,
@@ -286,7 +333,9 @@
       "sockets": "LGA1700,AM4,AM5",
       "maxTdp": 260,
       "radiator": 0,
-      "cfm": 68
+      "cfm": 68,
+      "coolerHeight": 160,
+      "image": ""
     },
     {
       "id": 35,
@@ -297,7 +346,9 @@
       "sockets": "LGA1700,AM4,AM5",
       "maxTdp": 300,
       "radiator": 240,
-      "cfm": 62
+      "cfm": 62,
+      "coolerHeight": 0,
+      "image": ""
     },
     {
       "id": 36,
@@ -308,7 +359,9 @@
       "sockets": "LGA1700,AM4,AM5",
       "maxTdp": 350,
       "radiator": 360,
-      "cfm": 62
+      "cfm": 62,
+      "coolerHeight": 0,
+      "image": ""
     },
     {
       "id": 37,
@@ -319,7 +372,87 @@
       "sockets": "LGA1700,AM4",
       "maxTdp": 150,
       "radiator": 0,
-      "cfm": 60
+      "cfm": 60,
+      "coolerHeight": 158,
+      "image": ""
+    },
+    {
+      "id": 38,
+      "category": "case",
+      "name": "NZXT H5 Flow",
+      "price": 2990,
+      "formFactors": "ATX,mATX,ITX",
+      "maxGpuLength": 365,
+      "maxCoolerHeight": 165,
+      "fanFront": 2,
+      "fanTop": 2,
+      "fanRear": 1,
+      "image": ""
+    },
+    {
+      "id": 39,
+      "category": "case",
+      "name": "Montech AIR 903 MAX",
+      "price": 1890,
+      "formFactors": "ATX,mATX,ITX",
+      "maxGpuLength": 400,
+      "maxCoolerHeight": 170,
+      "fanFront": 3,
+      "fanTop": 2,
+      "fanRear": 1,
+      "image": ""
+    },
+    {
+      "id": 40,
+      "category": "case",
+      "name": "Deepcool CC560",
+      "price": 1490,
+      "formFactors": "ATX,mATX,ITX",
+      "maxGpuLength": 370,
+      "maxCoolerHeight": 163,
+      "fanFront": 3,
+      "fanTop": 2,
+      "fanRear": 1,
+      "image": ""
+    },
+    {
+      "id": 41,
+      "category": "case",
+      "name": "Cooler Master MasterBox Q300L",
+      "price": 1290,
+      "formFactors": "mATX,ITX",
+      "maxGpuLength": 360,
+      "maxCoolerHeight": 159,
+      "fanFront": 1,
+      "fanTop": 2,
+      "fanRear": 1,
+      "image": ""
+    },
+    {
+      "id": 42,
+      "category": "case",
+      "name": "Lian Li LANCOOL 216",
+      "price": 3590,
+      "formFactors": "ATX,mATX,ITX",
+      "maxGpuLength": 392,
+      "maxCoolerHeight": 180,
+      "fanFront": 3,
+      "fanTop": 2,
+      "fanRear": 1,
+      "image": ""
+    },
+    {
+      "id": 43,
+      "category": "case",
+      "name": "Corsair 4000D Airflow",
+      "price": 3290,
+      "formFactors": "ATX,mATX,ITX",
+      "maxGpuLength": 360,
+      "maxCoolerHeight": 170,
+      "fanFront": 3,
+      "fanTop": 2,
+      "fanRear": 1,
+      "image": ""
     }
   ],
   "builds": []

@@ -27,6 +27,7 @@
       <span><q-icon name="north_east" color="orange" /> ลมออก {{ airflow.out }} CFM</span>
     </div>
     <div class="text-caption text-grey-8 q-mt-xs">{{ statusText[airflow.status] }}</div>
+    <div class="text-caption text-grey-7">CFM = ปริมาณลมที่พัดลมพัดได้ต่อนาที ยิ่งตัวเลขสูง ลมยิ่งแรง</div>
     <div v-if="rad" class="text-caption text-grey-8">
       หม้อน้ำ {{ cooler.radiator }} มม. ติด{{ mountKey === 'front' ? 'หน้า' : 'บน' }}เคส (พัดลมของหม้อน้ำนับรวมแล้ว)
     </div>
@@ -56,7 +57,7 @@ const L = {
   top: (i) => ({ cx: 130 + i * 70, cy: 62, r: 22, a: [130 + i * 70, 28, 130 + i * 70, 0] }),
 }
 const mountKey = computed(() => props.mount || 'front')
-// จำนวนช่องที่หม้อน้ำใช้ (120 มม. = 1 ช่อง)
+
 const rad = computed(() =>
   props.cooler?.coolerType === 'liquid' ? Math.min(Math.floor(props.cooler.radiator / 120), SLOTS[mountKey.value].max) : 0)
 const radBox = computed(() => {
@@ -66,7 +67,7 @@ const radBox = computed(() => {
     : { x: 104, y: 34, w: (rad.value - 1) * 70 + 52, h: 56 }
 })
 const fanList = computed(() => Object.entries(SLOTS).flatMap(([k, s]) => {
-  const off = k === mountKey.value ? rad.value : 0 // ช่องแรกๆ ของตำแหน่งที่ติดหม้อน้ำถูกหม้อน้ำใช้
+  const off = k === mountKey.value ? rad.value : 0 
   return Array.from({ length: s.max }, (_, i) => {
     const isRad = i < off
     return {

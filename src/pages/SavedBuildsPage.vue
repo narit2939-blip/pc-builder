@@ -2,8 +2,8 @@
   <q-page padding>
     <div class="text-h6 q-mb-md">สเปคที่บันทึกไว้</div>
     <div v-if="build.loading" class="row justify-center q-mt-xl"><q-spinner-dots color="primary" size="40px" /></div>
-    <q-banner v-else-if="build.error" rounded class="bg-red-1 text-negative">
-      {{ build.error }}<template #action><q-btn flat label="ลองใหม่" @click="build.fetchSaved()" /></template>
+    <q-banner v-else-if="build.error && !build.saved.length" rounded class="bg-red-1 text-negative">
+      {{ build.error }}<template #action><q-btn flat label="ลองใหม่" @click="reload" /></template>
     </q-banner>
     <q-list v-else-if="build.saved.length" bordered separator class="bg-white">
       <q-item v-for="b in build.saved" :key="b.id">
@@ -14,7 +14,7 @@
         <q-item-section side>
           <div class="row q-gutter-xs">
             <q-btn flat dense no-caps icon="open_in_new" label="เปิด" @click="open(b)" />
-            <q-btn flat dense color="negative" icon="delete" @click="build.removeSaved(b.id)" />
+            <q-btn flat dense no-caps color="negative" icon="delete" label="ลบ" @click="onRemove(b)" />
           </div>
         </q-item-section>
       </q-item>
@@ -30,11 +30,26 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { useQuasar } from 'quasar'
 import { useBuildStore } from '@/stores/build-store'
 import { fmt } from '@/utils/compat'
 
+const $q = useQuasar()
 const build = useBuildStore()
 const router = useRouter()
-onMounted(build.fetchSaved)
+const reload = () => build.fetchSaved().catch(() => {})
+onMounted(reload)
 const open = (b) => { build.load(b); router.push({ name: 'builder' }) }
+
+const onRemove = (b) => {
+  $q.dialog({ title: 'ลบสเปคนี้', message: `ต้องการลบ "${b.name}" ใช่ไหม`, cancel: 'ยกเลิก', ok: { label: 'ลบ', color: 'negative' }, persistent: true })
+    .onOk(async () => {
+      try {
+        await build.removeSaved(b.id)
+        $q.notify({ type: 'positive', message: 'ลบสเปคแล้ว' })
+      } catch {
+        $q.notify({ type: 'negative', message: `ลบไม่สำเร็จ: ${build.error}` })
+      }
+    })
+}
 </script>

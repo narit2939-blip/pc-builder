@@ -22,7 +22,7 @@
           <q-select v-model="form.category" :options="Object.keys(SPEC_FIELDS)" label="ประเภท" outlined dense :disable="!!form.id" />
           <q-input v-model="form.name" label="ชื่อรุ่น" outlined dense :rules="[(v) => !!v || 'กรอกชื่อรุ่น']" />
           <q-input v-model.number="form.price" type="number" label="ราคา (บาท)" outlined dense :rules="[(v) => v > 0 || 'ราคาต้องมากกว่า 0']" />
-          <q-input v-for="k in SPEC_FIELDS[form.category]" :key="k" v-model="form[k]" :label="k" outlined dense
+          <q-input v-for="k in SPEC_FIELDS[form.category]" :key="k" v-model="form[k]" :label="FIELD_LABELS[k] || k" outlined dense
             :type="NUMERIC.includes(k) ? 'number' : 'text'" :rules="[(v) => (v !== '' && v != null) || 'จำเป็นต้องกรอก']" />
           <div class="row justify-end q-gutter-sm">
             <q-btn flat label="ยกเลิก" v-close-popup />
@@ -38,7 +38,7 @@
 import { ref, onMounted } from 'vue'
 import { useQuasar } from 'quasar'
 import { usePartsStore } from '@/stores/parts-store'
-import { SPEC_FIELDS, NUMERIC, fmt } from '@/utils/compat'
+import { SPEC_FIELDS, NUMERIC, FIELD_LABELS, fmt } from '@/utils/compat'
 
 const $q = useQuasar()
 const parts = usePartsStore()

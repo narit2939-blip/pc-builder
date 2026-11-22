@@ -25,11 +25,9 @@
     </div>
   </div>
 </template>
-
 <script setup>
 import { computed } from 'vue'
 import { CAT_META, fmt, spec } from '@/utils/compat'
-
 const props = defineProps({
   cat: { type: String, required: true },
   part: { type: Object, default: null },

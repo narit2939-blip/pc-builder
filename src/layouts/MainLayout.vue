@@ -17,17 +17,14 @@
     <q-page-container><router-view /></q-page-container>
   </q-layout>
 </template>
-
 <script setup>
 import { useRouter } from 'vue-router'
 import { useQuasar } from 'quasar'
 import { useAuthStore } from '@/stores/auth-store'
-
 const title = import.meta.env.QCLI_APP_TITLE || 'PC Builder'
 const $q = useQuasar()
 const router = useRouter()
 const auth = useAuthStore()
-
 const onLogout = () => {
   $q.dialog({ title: 'ออกจากระบบ', message: 'ต้องการออกจากระบบใช่ไหม', cancel: true, persistent: true })
     .onOk(() => { auth.logout(); router.replace({ name: 'builder' }) })
